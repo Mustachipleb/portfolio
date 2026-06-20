@@ -1,4 +1,4 @@
-import { Landing } from '~/landing/landing';
+import { Landing } from '../pages/landing/landing';
 import type { Route } from './+types/home';
 
 export function meta(_args: Route.MetaArgs) {
