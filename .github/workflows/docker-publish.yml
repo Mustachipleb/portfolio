@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: portfolio
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build-and-push:
@@ -35,7 +35,7 @@ jobs:
           tags: |
             type=sha,format=long
 
-      - name: Build and push Backend image
+      - name: Build and push image
         uses: docker/build-push-action@v5
         with:
           context: .
