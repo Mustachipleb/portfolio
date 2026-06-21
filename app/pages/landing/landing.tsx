@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '~/common/button/button';
+import { Page } from '~/common/layout/page';
 import { Technologies } from '~/pages/landing/components/technologies/technologies';
 import backgroundImg from './bg.jpg';
 import { Me } from './components/me/me';
@@ -19,15 +20,8 @@ export function Landing() {
   }, []);
 
   return (
-    <main className="bg-black">
+    <Page backgroundUrl={backgroundImg}>
       <div className="flex flex-col items-center justify-center relative min-h-screen">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, transparent, black), url(${backgroundImg})`,
-          }}
-        />
-
         <Me />
 
         <div className="z-10 pb-5 flex flex-col items-center" style={{ opacity: scrollOpacity }}>
@@ -52,13 +46,13 @@ export function Landing() {
             A passionate software engineer with a strong background in software development and a keen interest in
             building scalable and efficient systems.
           </p>
-          <Button type="button" className="w-full md:w-fit">
+          <Button type="navLink" className="w-full md:w-fit" to="/projects">
             Projects
           </Button>
         </div>
       </div>
 
       <div className="pt-100"></div>
-    </main>
+    </Page>
   );
 }
