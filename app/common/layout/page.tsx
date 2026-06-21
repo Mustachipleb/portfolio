@@ -5,7 +5,7 @@ type PageProps = {
 
 export function Page({ children, backgroundUrl }: PageProps) {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-black text-white min-h-screen">
       {backgroundUrl && (
         <div
           className="absolute inset-0 bg-cover bg-center"
