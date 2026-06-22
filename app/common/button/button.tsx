@@ -1,5 +1,6 @@
 import type React from 'react';
 import { NavLink, type To } from 'react-router';
+import { twMerge } from 'tailwind-merge';
 
 type ButtonProps =
   | {
@@ -22,7 +23,10 @@ export function Button({ type, children, className, to, onClick }: ButtonProps) 
     return (
       <NavLink
         to={to}
-        className={`border-3 border-gray-50/25 px-24 py-2 w-fit rounded-full text-xl cursor-pointer ${className}`}
+        className={twMerge(
+          `border-3 border-gray-50/25 px-24 py-2 w-fit rounded-full text-xl cursor-pointer hover:bg-gray-500/25`,
+          className,
+        )}
       >
         {children}
       </NavLink>
@@ -32,7 +36,10 @@ export function Button({ type, children, className, to, onClick }: ButtonProps) 
   return (
     <button
       type={type}
-      className={`border-3 border-gray-50/25 px-24 py-2 w-fit rounded-full text-xl cursor-pointer ${className}`}
+      className={twMerge(
+        `border-3 border-gray-50/25 px-24 py-2 w-fit rounded-full text-xl cursor-pointer hover:bg-gray-500/25`,
+        className,
+      )}
       onClick={onClick}
     >
       {children}
