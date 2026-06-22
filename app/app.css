@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* safelist a couple classes for dynamic use */
+@source inline("p-{0,1,2,3,4,5,6,8,10}");
+
 @theme {
   --font-sans:
     "Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",

@@ -16,7 +16,7 @@ export function Project({ title, description, image, link, padImage }: ProjectPr
         <img
           src={image}
           alt={title}
-          className={`w-full md:w-48 h-auto rounded-lg object-cover${padImage ? ` p-${padImage}` : ''}`}
+          className={`max-sm:p-4 max-md:p-16 w-full md:w-48 md:h-auto rounded-lg object-cover${padImage ? ` p-${padImage}` : ''}`}
         />
       )}
       <div className="flex-1">

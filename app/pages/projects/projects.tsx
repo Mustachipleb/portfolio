@@ -13,47 +13,46 @@ export function Projects() {
           <TimelineItem date="2026 - Present">
             <Project
               title="NixOS as Daily Driver"
-              description="A brief description of project 1 and its impact."
+              description="NixOS is a Linux distribution based around reproducible, declarative builds and an immutable design. Learning Nix has been a journey of discovery, and has shown me how powerful a declarative approach can be in managing systems."
               image="https://brand.nixos.org/logos/nixos-logo-rainbow-gradient-white-regular-vertical-recommended.svg"
-              link="/projects/1"
+              link="/projects/nixos"
             />
           </TimelineItem>
           <TimelineItem date="2022 - Present">
             <Project
-              title="SmartWithFood - Colruyt Group"
+              title="Colruyt Group - Retail Search Engine"
               description={
-                <div>
-                  <p>
-                    My time at SmartWithFood consisted mainly of participation to several key projects to enhance
-                    digital retail at Colruyt Group.
-                    <br />
-                    This includes:
-                  </p>
-                  <ul className="list-disc list-inside ml-2">
-                    <li>
-                      Enrichment of Retail Products with allergens, lifestyles, Green-scores (formerly Eco-Score) and
-                      Nutri-Scores.
-                    </li>
-                    <li>Enrichment of recipes with allergens, lifestyles and Nutri-Scores.</li>
-                    <li>
-                      A specialised Retail Search Engine for products and recipes, aiming for maximum relevance to the
-                      end-user's queries. This being done by utilising tiered levels of relevance through Elasticsearch
-                      and a sophisticated configuration for all types of food and non-food products sold by Colruyt
-                      Group-owned stores.
-                    </li>
-                  </ul>
-                </div>
+                <p>
+                  A specialised Retail Search Engine for products and recipes, aiming for maximum relevance to the
+                  end-user's queries; utilising tiered levels of relevance through Elasticsearch and a sophisticated
+                  configuration for all types of food and non-food products sold by Colruyt Group-owned stores.
+                </p>
               }
               image={cgLogoUrl}
-              link="/projects/1"
+              link="/projects/cg-retail-search-engine"
+            />
+          </TimelineItem>
+          <TimelineItem date="2022 - Present">
+            <Project
+              title="Colruyt Group - Integrated Food Platform v3"
+              description={
+                <p>
+                  The IFPv3 platform is a collection of services and tools designed to enrich product and recipe
+                  information. It enhances the PIM lifecycle by providing producers with additional information about
+                  their products; and also assists consumers in making informed decisions by providing nutritional
+                  labels such as Nutri- and Green-score.
+                </p>
+              }
+              image={cgLogoUrl}
+              link="/projects/cg-ifp-v3"
             />
           </TimelineItem>
           <TimelineItem date="2021 - Present">
             <Project
               title="Dragon Legion Media Server"
-              description="Another amazing project with different challenges and solutions."
+              description="Fully home-hosted media solution for friends and family. Built with Docker compose, Traefik, Cloudflare, and many FOSS projects maintained by beautiful people."
               image="https://static.dragonlegion.be/logo-v2-light.png"
-              link="/projects/2"
+              link="/projects/dragonlegion"
               padImage={6}
             />
           </TimelineItem>
