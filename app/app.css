@@ -7,6 +7,42 @@
   --font-sans:
     "Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
+
+  --color-monokai-red-50: #fff1f3;
+  --color-monokai-red-100: #ffe4e7;
+  --color-monokai-red-200: #ffccd4;
+  --color-monokai-red-300: #fea3b2;
+  --color-monokai-red-400: #fd6883;
+  --color-monokai-red-500: #f73c63;
+  --color-monokai-red-600: #e41a4e;
+  --color-monokai-red-700: #c10f41;
+  --color-monokai-red-800: #a1103d;
+  --color-monokai-red-900: #8a113b;
+  --color-monokai-red-950: #4d041b;
+
+  --color-monokai-yellow-50: #fff9eb;
+  --color-monokai-yellow-100: #fdeec8;
+  --color-monokai-yellow-200: #fadb8d;
+  --color-monokai-yellow-300: #f9cc6c;
+  --color-monokai-yellow-400: #f6ab29;
+  --color-monokai-yellow-500: #f08a10;
+  --color-monokai-yellow-600: #d4660b;
+  --color-monokai-yellow-700: #b0460d;
+  --color-monokai-yellow-800: #8f3611;
+  --color-monokai-yellow-900: #762d11;
+  --color-monokai-yellow-950: #431505;
+
+  --color-monokai-blue-50: #f2fbf9;
+  --color-monokai-blue-100: #d3f4ed;
+  --color-monokai-blue-200: #a7e8db;
+  --color-monokai-blue-300: #85dacc;
+  --color-monokai-blue-400: #46bbab;
+  --color-monokai-blue-500: #2d9f92;
+  --color-monokai-blue-600: #227f76;
+  --color-monokai-blue-700: #1f6660;
+  --color-monokai-blue-800: #1d524e;
+  --color-monokai-blue-900: #1c4542;
+  --color-monokai-blue-950: #0b2827;
 }
 
 @layer utilities {
