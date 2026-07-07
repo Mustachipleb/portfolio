@@ -19,7 +19,7 @@ export function Project({ title, description, image, link, padImage }: ProjectPr
           className={`max-sm:p-4 max-md:p-16 w-full md:w-48 md:h-auto rounded-lg object-cover${padImage ? ` p-${padImage}` : ''}`}
         />
       )}
-      <div className="flex-1">
+      <div className="flex flex-col">
         <h2 className="text-2xl font-bold mb-2">{title}</h2>
         {typeof description === 'string' ? (
           <p className="text-gray-300 mb-4">{description}</p>
